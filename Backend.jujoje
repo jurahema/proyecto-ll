@@ -1,0 +1,536 @@
+{
+	"info": {
+		"_postman_id": "00f63139-08e5-4de9-8f61-48300bdc75ae",
+		"name": "backend",
+		"description": "### rutas para obtener datos de marvel api\n\n- chars\n- comics",
+		"schema": https://github.com/jurahema/proyecto-ll.git
+	},
+	"item": [
+		{
+			"name": "Chars",
+			"item": [
+				{
+					"name": "Characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2&offset=100",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"characters"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								},
+								{
+									"key": "offset",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CharactersById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/characters/:id?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"characters",
+								":id"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1011346"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CharactersByIdComics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/characters/:id/comics?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"characters",
+								":id",
+								"comics"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1011346"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CharactersByIdEvents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/characters/:id/events?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"characters",
+								":id",
+								"events"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1011346"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CharactersByIdSeries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/characters/:id/series?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"characters",
+								":id",
+								"series"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1011346"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CharactersByIdStories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/characters/:id/stories?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"characters",
+								":id",
+								"stories"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1011346"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "### rutas para obtener los datos de marvel characters\n\n- general\n- id \n- comics\n- events\n- series\n- stories"
+		},
+		{
+			"name": "Comics",
+			"item": [
+				{
+					"name": "Comics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"comics"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ComicsById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/comics/:id?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"comics",
+								":id"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ComicsByIdCharacters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/comics/:id/characters?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"comics",
+								":id",
+								"characters"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ComicsByIdCreators",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/comics/:id/creators?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"comics",
+								":id",
+								"creators"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ComicsByIdEvents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/comics/:id/events?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"comics",
+								":id",
+								"events"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ComicsByIdStories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway.marvel.com/v1/public/comics/:id/stories?ts=1&apikey=644d4b548b1ac438d68fb3b61d7622d0&hash=5b92f616686f8d3fdee4cc3b37c214d2",
+							"protocol": "http",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"path": [
+								"v1",
+								"public",
+								"comics",
+								":id",
+								"stories"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "644d4b548b1ac438d68fb3b61d7622d0"
+								},
+								{
+									"key": "hash",
+									"value": "5b92f616686f8d3fdee4cc3b37c214d2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "### rutas para obtener los datos de marvel comics\n\n- general\n- id \n- characters\n- creators\n- events\n- stories"
+		}
+	]
+}
